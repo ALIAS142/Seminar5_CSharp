@@ -7,10 +7,25 @@ System.Console.WriteLine(String.Join(" ", array));
 int positiveSum = 0;
 int negativeSum = 0;
 
-foreach (var el in array)
+// foreach (var el in array)
+// {
+//     positiveSum += el > 0 ? el : 0;
+//     negativeSum += el < 0 ? el : 0;
+// }
+
+for(int i = 0; i < array.length; i++)
 {
-    positiveSum += el > 0 ? el : 0;
-    negativeSum += el < 0 ? el : 0;
+    positiveSum += array[i] > 0 ? array[i] : 0;
+    negativeSum += array[i] < 0 ? array[i] : 0;
+
+if(array[i] > 0)
+{
+   positiveSum += array[i];
+}
+else
+{
+    negativeSum += array[i];
+}
 }
 System.Console.WriteLine($"PositiveSum = {positiveSum}, NegativeSum = {negativeSum}");
 
