@@ -13,7 +13,7 @@ int negativeSum = 0;
 //     negativeSum += el < 0 ? el : 0;
 // }
 
-for(int i = 0; i < array.length; i++)
+for(int i = 0; i < array.Length; i++)
 {
     positiveSum += array[i] > 0 ? array[i] : 0;
     negativeSum += array[i] < 0 ? array[i] : 0;
